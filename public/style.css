@@ -22,9 +22,6 @@ select {
 
 body {
   background: #1A202C;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .header {
@@ -403,6 +400,10 @@ body {
 .mainSection .sectionAside .asideTable .line:last-child {
   padding-bottom: 0;
 }
+.mainSection .sectionAside .asideTable .line .lineTitle, .mainSection .sectionAside .asideTable .line .graphInfo {
+  display: flex;
+  gap: 15px;
+}
 .mainSection .sectionAside .asideTable .line span {
   font-size: 18px;
   font-weight: 500;
@@ -504,6 +505,13 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 1280px) {
+  .mainSection .mainSectionWrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 @media screen and (max-width: 1024px) {
   .mainSection .mainSectionWrapper {
     height: -webkit-fit-content;
@@ -522,6 +530,9 @@ body {
   .mainSection .mainSectionWrapper .subWrapper {
     gap: 0;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -542,6 +553,9 @@ body {
 @media screen and (max-width: 1280px) {
   .mainSection .mainSectionWrapper .subWrapper .totalPoints {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .mainSection .mainSectionWrapper .subWrapper .totalPoints header {
@@ -595,10 +609,15 @@ body {
 }
 .mainSection .mainSectionWrapper .subWrapper .totalPoints .totalPointsContainer .totalGraphicWrapper {
   width: 100%;
-  height: 70%;
+  height: 200px;
   display: flex;
   align-items: flex-start;
   color: white;
+}
+@media screen and (max-width: 1600px) {
+  .mainSection .mainSectionWrapper .subWrapper .totalPoints .totalPointsContainer .totalGraphicWrapper {
+    height: 200px;
+  }
 }
 @media screen and (max-width: 680px) {
   .mainSection .mainSectionWrapper .subWrapper .totalPoints .totalPointsContainer .totalGraphicWrapper {
@@ -611,6 +630,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 82%;
+}
+@media screen and (max-width: 1280px) {
+  .mainSection .mainSectionWrapper .subWrapper .totalPoints .totalPointsContainer .totalGraphicWrapper .numbersVertical {
+    height: 125px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .mainSection .mainSectionWrapper .subWrapper .totalPoints .totalPointsContainer .totalGraphicWrapper .numbersVertical {
@@ -824,15 +848,15 @@ body {
 @media screen and (max-width: 1280px) {
   .mainSection .mainSectionWrapper .subWrapper .transform {
     width: 100%;
-    height: 80%;
     margin-top: 15px;
   }
 }
 @media screen and (max-width: 1024px) {
   .mainSection .mainSectionWrapper .subWrapper .transform {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 990px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -851,6 +875,7 @@ body {
 @media screen and (max-width: 1280px) {
   .mainSection .mainSectionWrapper .subWrapper .transform .exchanges {
     width: 60%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -871,7 +896,7 @@ body {
 }
 @media screen and (max-width: 1690px) {
   .mainSection .mainSectionWrapper .subWrapper .transform .exchanges header span {
-    font-size: 1.15vw;
+    font-size: 1.1vw;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -898,6 +923,11 @@ body {
 .mainSection .mainSectionWrapper .subWrapper .transform .exchanges .shapesWrapper .singleShapeWrapper {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1280px) {
+  .mainSection .mainSectionWrapper .subWrapper .transform .exchanges .shapesWrapper .singleShapeWrapper {
+    height: 435px;
+  }
 }
 .mainSection .mainSectionWrapper .subWrapper .transform .exchanges .shapesWrapper .singleShapeWrapper .shapeWrapper {
   width: 50px;
@@ -997,11 +1027,13 @@ body {
     width: 40%;
     aspect-ratio: 1/1;
     gap: 15px;
+    align-self: flex-start;
   }
 }
 @media screen and (max-width: 1024px) {
   .mainSection .mainSectionWrapper .subWrapper .transform .coins {
     align-self: flex-start;
+    gap: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1127,6 +1159,9 @@ body {
 @media screen and (max-width: 1280px) {
   .subWrapper2 {
     flex-direction: column;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
 }
 .subWrapper2 .amountBars {
@@ -1142,7 +1177,7 @@ body {
 @media screen and (max-width: 1280px) {
   .subWrapper2 .amountBars {
     width: 100%;
-    height: 100vmax;
+    height: 80vmin;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1299,6 +1334,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1280px) {
+  .subWrapper2 .analytics .wrapper .line {
+    padding: 15px;
+  }
+}
 .subWrapper2 .analytics .wrapper .line .imageWrapper {
   display: flex;
   gap: 47px;
@@ -1311,6 +1351,11 @@ body {
   line-height: 22px;
   font-weight: 400;
   text-align: left;
+}
+@media screen and (max-width: 1280px) {
+  .subWrapper2 .analytics .wrapper .line span {
+    font-size: 17px;
+  }
 }
 .subWrapper2 .analytics .wrapper .line div {
   display: flex;
@@ -1497,6 +1542,7 @@ body {
 .secondSectionWrapper {
   display: flex;
   padding: 15px 55px;
+  padding-top: 0;
   gap: 15px;
   background: #1A202C;
 }

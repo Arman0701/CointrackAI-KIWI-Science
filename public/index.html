@@ -653,5 +653,19 @@
 		</main>
 
 		<script src="main.js"></script>
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+
+			const firebaseConfig = {
+				apiKey: "AIzaSyAqq9LC3zg4vAIJJUCRNW0wyjdcjip2T0Y",
+				authDomain: "crypto-kiwi.firebaseapp.com",
+				projectId: "crypto-kiwi",
+				storageBucket: "crypto-kiwi.appspot.com",
+				messagingSenderId: "738249712897",
+				appId: "1:738249712897:web:3c4ed36e8264f5a5a86700"
+			};
+
+			const app = initializeApp(firebaseConfig);
+		</script>
 	</body>
 </html>
