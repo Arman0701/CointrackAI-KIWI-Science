@@ -256,8 +256,8 @@ body {
   gap: 15px;
 }
 .mainSection ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
 }
 .mainSection ::-webkit-scrollbar-track {
   background-color: rgba(165, 136, 231, 0.1);
@@ -1644,6 +1644,11 @@ body {
     margin-right: 10px;
   }
 }
+@media screen and (max-width: 500px) {
+  .secondSectionWrapper footer p {
+    font-size: 13px;
+  }
+}
 .secondSectionWrapper footer p span {
   color: #E04F44;
 }
@@ -1658,6 +1663,11 @@ body {
   width: 100%;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .secondSectionWrapper footer button {
+    font-size: 13px;
+  }
 }
 .secondSectionWrapper footer .closeButton {
   padding: 5px;
