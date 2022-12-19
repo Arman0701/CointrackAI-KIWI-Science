@@ -18,32 +18,32 @@ Production link: [crypto-kiwi.web.app](https://crypto-kiwi.web.app/)
 ## Project screenshots
 
 #### 1. Mobile version
-![Mobile version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/mobile.png)
+![Mobile version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/mobile.png)
 
 ---
 #### 2. Tablet version
-![Tablet version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/tablet.png)
+![Tablet version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/tablet.png)
 
 ---
 #### 3. Laptop version
-![Laptop version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/laptop.png)
+![Laptop version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/laptop.png)
 
 ---
 #### 4. SXGA version
-![SXGA version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/sxga.png)
+![SXGA version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/sxga.png)
 
 ---
 #### 5. HD version
-![HD version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/hd.png)
+![HD version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/hd.png)
 
 ---
 #### 6. HD+ version
-![HD+ version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/hdplus.png)
+![HD+ version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/hdplus.png)
 
 ---
 #### 7. FHD version
-![FHD version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/fhd.png)
+![FHD version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/fhd.png)
 
 ---
 #### 8. Ulrta wide screen version (FHD+)
-![Ulrta wide version](https://github.com/Arman0701/CointrackAI-KIWI-Science/project-images/wud.png)
+![Ulrta wide version](https://github.com/Arman0701/CointrackAI-KIWI-Science/blob/main/project-images/uwd.png)
