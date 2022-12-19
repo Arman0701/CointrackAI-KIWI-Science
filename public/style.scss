@@ -5,9 +5,9 @@
 body {
     background: $--background-dark;
 
-	@include BP(mobile) {
-		width: fit-content;
-	}
+    @include BP(mobile) {
+        width: fit-content;
+    }
 }
 
 .header {
@@ -29,9 +29,9 @@ body {
         padding: 15px 2%;
     }
 
-	@include BP(mobile) {
-		padding-bottom: 35px;
-	}
+    @include BP(mobile) {
+        padding-bottom: 35px;
+    }
 
     .menu {
         display: none;
@@ -41,9 +41,9 @@ body {
             display: block;
         }
 
-		@include BP(mobile) {
-			margin: 0 15px; 
-		}
+        @include BP(mobile) {
+            margin: 0 15px;
+        }
     }
 
     .logo {
@@ -55,15 +55,15 @@ body {
         }
 
         @include BP(navbtn) {
-			width: 25%;
+            width: 25%;
         }
 
-		@include BP(mobile) {
-			width: calc(100% - 10% - 20px);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+        @include BP(mobile) {
+            width: calc(100% - 10% - 20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         img {
             width: 40%;
@@ -73,9 +73,9 @@ body {
                 width: 90%;
             }
 
-			@include BP(mobile) {
-				width: 50%;
-			}
+            @include BP(mobile) {
+                width: 50%;
+            }
         }
     }
 
@@ -88,16 +88,16 @@ body {
             width: 78%;
         }
 
-		@include BP(navbtn) {
-			width: 65%;
+        @include BP(navbtn) {
+            width: 65%;
         }
 
-		@include BP(mobile) {
-			position: absolute;
-			transform: translateY(45px);
-			width: 100%;
-			justify-content: center;
-		}
+        @include BP(mobile) {
+            position: absolute;
+            transform: translateY(45px);
+            width: 100%;
+            justify-content: center;
+        }
 
         span img {
             margin-left: 15px;
@@ -186,10 +186,10 @@ body {
             border-radius: 50%;
             cursor: pointer;
 
-			@include BP(navbtn) {
-				width: 35px;
-				height: 35px;
-			}
+            @include BP(navbtn) {
+                width: 35px;
+                height: 35px;
+            }
         }
     }
     .iconWrapper {
@@ -207,16 +207,16 @@ body {
             }
         }
 
-		@include BP(navbtn) {
-			width: 23px;
-			height: 23px;
-		}
+        @include BP(navbtn) {
+            width: 23px;
+            height: 23px;
+        }
 
-		@include BP(mobile) {
-			width: 16px;
-			height: 16px;
-		}
-		
+        @include BP(mobile) {
+            width: 16px;
+            height: 16px;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -231,6 +231,19 @@ body {
     display: flex;
     gap: 15px;
 
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba($--purple, 0.1);
+    }
+
+	::-webkit-scrollbar-thumb {
+		background: rgba($--purple-dark, 1);
+	}
+
     @include BP(uwd) {
         width: 1920px;
         border-left: 1px solid $--border-grey;
@@ -242,9 +255,9 @@ body {
         padding: 15px 2%;
     }
 
-	@include BP(mobile) {
-		padding: 15px;
-	}
+    @include BP(mobile) {
+        padding: 15px;
+    }
 
     .sectionAside {
         width: 25%;
@@ -364,10 +377,11 @@ body {
                     padding-bottom: 0;
                 }
 
-				.lineTitle, .graphInfo {
-					display: flex;
-					gap: 15px;
-				}
+                .lineTitle,
+                .graphInfo {
+                    display: flex;
+                    gap: 15px;
+                }
 
                 span {
                     font-size: 18px;
@@ -488,7 +502,7 @@ body {
             width: 100%;
         }
 
-		@include BP(sxga) {
+        @include BP(sxga) {
             height: fit-content;
         }
 
@@ -515,334 +529,335 @@ body {
                 height: fit-content;
             }
 
-			.totalPoints {
-				width: 50%;
-				height: 100%;
+            .totalPoints {
+                width: 50%;
+                height: 100%;
 
-				border-radius: 5px;
-				padding: 15px 28px;
-				background: $--background;
-				box-shadow: black 0px 5px 30px -10px;
+                border-radius: 5px;
+                padding: 15px 28px;
+                background: $--background;
+                box-shadow: black 0px 5px 30px -10px;
 
-				@include BP(sxga) {
-					width: 100%;
-					height: fit-content;
-				}
+                @include BP(sxga) {
+                    width: 100%;
+                    height: fit-content;
+                }
 
-				header {
-					width: 100%;
+                header {
+                    width: 100%;
 
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-					color: white;
-					padding-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: white;
+                    padding-bottom: 15px;
 
-					> div {
-						display: flex;
-						gap: 10px;
-					}
+                    > div {
+                        display: flex;
+                        gap: 10px;
+                    }
 
-					span {
-						font-size: 20px;
-						line-height: 30px;
-						font-weight: 400;
-					}
+                    span {
+                        font-size: 20px;
+                        line-height: 30px;
+                        font-weight: 400;
+                    }
 
-					.selectWrapper {
-						position: relative;
+                    .selectWrapper {
+                        position: relative;
 
-						img {
-							font-size: 12px;
-							position: absolute;
-							right: 7px;
-							top: 50%;
-							transform: translateY(-50%);
-						}
-						select {
-							padding: 5px;
-							appearance: none;
-							padding-right: 25px;
-							border: 1px solid $--border-grey;
-							border-radius: 4px;
-							background: $--background;
-							color: white;
-						}
-					}
+                        img {
+                            font-size: 12px;
+                            position: absolute;
+                            right: 7px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        select {
+                            padding: 5px;
+                            appearance: none;
+                            padding-right: 25px;
+                            border: 1px solid $--border-grey;
+                            border-radius: 4px;
+                            background: $--background;
+                            color: white;
+                        }
+                    }
 
-					button {
-						color: $--purple-dark;
-						cursor: pointer;
-						border: none;
-					}
-				}
-				.totalPointsContainer{
-					@include BP(totalPoints) {
-						width: calc(100vw - 4vw - 56px);
-						overflow-x: scroll;
-					}
-	
-					.totalGraphicWrapper {
-						width: 100%;
-						height: 200px;
-						display: flex;
-						align-items: flex-start;
-						color: white;
+                    button {
+                        color: $--purple-dark;
+                        cursor: pointer;
+                        border: none;
+                    }
+                }
+                .totalPointsContainer {
+                    @include BP(totalPoints) {
+                        width: calc(100vw - 4vw - 56px);
+                        overflow-x: scroll;
+                    }
 
-						@include BP(hdp) {
-							height: 200px;
-						}
+                    .totalGraphicWrapper {
+                        width: 100%;
+                        height: 200px;
+                        display: flex;
+                        align-items: flex-start;
+                        color: white;
 
-						@include BP(totalPoints) {
-							width: 800px;
-							min-width: 800px;
-						}
+                        @include BP(hdp) {
+                            height: 200px;
+                        }
 
-						.numbersVertical {
-							display: flex;
-							flex-direction: column;
-							justify-content: space-between;
-							height: 82%;
+                        @include BP(totalPoints) {
+                            width: 800px;
+                            min-width: 800px;
+                        }
 
-							@include BP(sxga) {
-								height: 125px;
-							}
+                        .numbersVertical {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 82%;
 
-							@include BP(laptop) {
-								height: 125px;
-							}
+                            @include BP(sxga) {
+                                height: 125px;
+                            }
 
-							@include BP(totalPoints) {
-								height: 165px;
-								margin-top: 20px;
-							}
+                            @include BP(laptop) {
+                                height: 125px;
+                            }
 
-							span {
-								font-size: 12px;
-								line-height: 18px;
-								font-weight: 400;
-								justify-self: flex-end;
+                            @include BP(totalPoints) {
+                                height: 165px;
+                                margin-top: 20px;
+                            }
 
-								&:first-child {
-									margin-top: 5px;
-								}
-							}
-						}
+                            span {
+                                font-size: 12px;
+                                line-height: 18px;
+                                font-weight: 400;
+                                justify-self: flex-end;
 
-						.mainGraphic {
-							padding-left: 10px;
-							position: relative;
-							height: 80%;
+                                &:first-child {
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
 
-							@include BP(totalPoints) {
-								width: 100%;
-							}
+                        .mainGraphic {
+                            padding-left: 10px;
+                            position: relative;
+                            height: 80%;
 
-							.controls {
-								position: absolute;
-								right: 10px;
-								top: -10px;
+                            @include BP(totalPoints) {
+                                width: 100%;
+                            }
 
-								@include BP(totalPoints) {
-									position: sticky;
-									display: flex;
-									gap: 5px;
-									justify-content: flex-end;
-								}
+                            .controls {
+                                position: absolute;
+                                right: 10px;
+                                top: -10px;
 
-								button {
-									width: 15px;
-									aspect-ratio: 1/1;
-									border: none;
-									cursor: pointer;
+                                @include BP(totalPoints) {
+                                    position: sticky;
+                                    display: flex;
+                                    gap: 5px;
+                                    justify-content: flex-end;
+                                }
 
-									img {
-										width: 100%;
-										height: 100%;
-										object-fit: contain;
-									}
-								}
-							}
+                                button {
+                                    width: 15px;
+                                    aspect-ratio: 1/1;
+                                    border: none;
+                                    cursor: pointer;
 
-							.table {
-								border-bottom: 1px solid $--border-grey;
-								border-left: 1px solid $--border-grey;
-								position: relative;
-								padding: 0;
-								height: 100%;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
 
-								img {
-									width: 95%;
-									height: 100%;
-									transform: translateY(15px);
-								}
+                            .table {
+                                border-bottom: 1px solid $--border-grey;
+                                border-left: 1px solid $--border-grey;
+                                position: relative;
+                                padding: 0;
+                                height: 100%;
 
-								.lines {
-									display: flex;
-									flex-direction: column;
-									justify-content: space-between;
-									position: absolute;
-									top: 0px;
-									left: 0px;
-									width: 100%;
-									height: 100%;
+                                img {
+                                    width: 95%;
+                                    height: 100%;
+                                    transform: translateY(15px);
+                                }
 
-									gap: 35px;
+                                .lines {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    width: 100%;
+                                    height: 100%;
 
-									@include BP(sxga) {
-										gap: 56px;
-									}
+                                    gap: 35px;
 
-									@include BP(sxga) {
-										gap: 11px;
-									}
+                                    @include BP(sxga) {
+                                        gap: 56px;
+                                    }
 
-									.tableLine {
-										&:not(:last-child) {
-											border-bottom: 1px solid $--border-grey;
-										}
+                                    @include BP(sxga) {
+                                        gap: 11px;
+                                    }
 
-										&:first-child {
-											margin-top: 12px;
-										}
-									}
-								}
-								.dotWrapper {
-									position: absolute;
-									top: 47%;
-									right: 4%;
+                                    .tableLine {
+                                        &:not(:last-child) {
+                                            border-bottom: 1px solid
+                                                $--border-grey;
+                                        }
 
-									width: 32px;
-									aspect-ratio: 1/1;
-									border-radius: 4px;
-									background: rgba(255, 255, 255, 0.1);
+                                        &:first-child {
+                                            margin-top: 12px;
+                                        }
+                                    }
+                                }
+                                .dotWrapper {
+                                    position: absolute;
+                                    top: 47%;
+                                    right: 4%;
 
-									.dot {
-										background: white;
-										border-radius: 2px;
-										width: 12px;
-										aspect-ratio: 1/1;
+                                    width: 32px;
+                                    aspect-ratio: 1/1;
+                                    border-radius: 4px;
+                                    background: rgba(255, 255, 255, 0.1);
 
-										position: absolute;
-										top: 50%;
-										left: 50%;
-										transform: translate(-50%, -50%);
+                                    .dot {
+                                        background: white;
+                                        border-radius: 2px;
+                                        width: 12px;
+                                        aspect-ratio: 1/1;
 
-										border: 3px solid $--text-green;
-									}
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
 
-									.title {
-										padding: 8px 17px;
-										background: white;
-										border-radius: 3px;
+                                        border: 3px solid $--text-green;
+                                    }
 
-										position: absolute;
-										top: -155%;
-										left: -117%;
+                                    .title {
+                                        padding: 8px 17px;
+                                        background: white;
+                                        border-radius: 3px;
 
-										span {
-											color: #000;
-											font-size: 14px;
-											line-height: 22px;
-											font-weight: 300;
-										}
+                                        position: absolute;
+                                        top: -155%;
+                                        left: -117%;
 
-										.arrow {
-											position: absolute;
-											width: 8px;
-											aspect-ratio: 1/1;
-											top: 100%;
-											left: 50%;
-											transform: translate(-50%, -50%)
-												rotate(45deg);
-											background: white;
-										}
-									}
-								}
-							}
-							.numbersHorizontal {
-								margin-top: 24px;
-								display: flex;
-								justify-content: space-between;
+                                        span {
+                                            color: #000;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            font-weight: 300;
+                                        }
 
-								span {
-									font-size: 12px;
-									line-height: 18px;
-									font-weight: 400;
-								}
-							}
-						}
-					}
-				}
+                                        .arrow {
+                                            position: absolute;
+                                            width: 8px;
+                                            aspect-ratio: 1/1;
+                                            top: 100%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%)
+                                                rotate(45deg);
+                                            background: white;
+                                        }
+                                    }
+                                }
+                            }
+                            .numbersHorizontal {
+                                margin-top: 24px;
+                                display: flex;
+                                justify-content: space-between;
 
-				.selectionsWrapper {
-					display: flex;
-					justify-content: flex-end;
-					margin-top: 12px;
+                                span {
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
 
-					.selections {
-						display: flex;
-						gap: 35px;
-						width: fit-content;
-						padding: 5px;
-						border-radius: 5px;
-						background: $--background;
-						color: white;
-						box-shadow: -1px 5px 10px rgba(black, 0.5);
+                .selectionsWrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 12px;
 
-						form {
-							display: grid;
-							place-content: center;
-						}
+                    .selections {
+                        display: flex;
+                        gap: 35px;
+                        width: fit-content;
+                        padding: 5px;
+                        border-radius: 5px;
+                        background: $--background;
+                        color: white;
+                        box-shadow: -1px 5px 10px rgba(black, 0.5);
 
-						.form-control {
-							line-height: 1.1;
-							display: grid;
-							grid-template-columns: 1em auto;
-							gap: 0.5em;
+                        form {
+                            display: grid;
+                            place-content: center;
+                        }
 
-							input[type="checkbox"] {
-								-webkit-appearance: none;
-								margin: 0;
+                        .form-control {
+                            line-height: 1.1;
+                            display: grid;
+                            grid-template-columns: 1em auto;
+                            gap: 0.5em;
 
-								width: 1.15em;
-								height: 1.15em;
-								border: 0.15em solid $--purple-dark;
-								border-radius: 2px;
+                            input[type="checkbox"] {
+                                -webkit-appearance: none;
+                                margin: 0;
 
-								display: grid;
-								place-content: center;
-							}
+                                width: 1.15em;
+                                height: 1.15em;
+                                border: 0.15em solid $--purple-dark;
+                                border-radius: 2px;
 
-							input[type="checkbox"]::before {
-								content: "";
-								width: 17px;
-								height: 17px;
-								clip-path: polygon(
-									51% 69%,
-									94% 0,
-									100% 3%,
-									52% 80%,
-									11% 42%,
-									16% 37%
-								);
-								transform: scale(0);
-								transform-origin: bottom left;
-								transition: 120ms transform ease-in-out;
-								background: $--text-green;
-							}
+                                display: grid;
+                                place-content: center;
+                            }
 
-							input[type="checkbox"]:checked::before {
-								transform: scale(1);
-							}
+                            input[type="checkbox"]::before {
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                clip-path: polygon(
+                                    51% 69%,
+                                    94% 0,
+                                    100% 3%,
+                                    52% 80%,
+                                    11% 42%,
+                                    16% 37%
+                                );
+                                transform: scale(0);
+                                transform-origin: bottom left;
+                                transition: 120ms transform ease-in-out;
+                                background: $--text-green;
+                            }
 
-							input[type="checkbox"]:checked ~ span {
-								color: $--text-green;
-							}
-						}
-					}
-				}
-			}
+                            input[type="checkbox"]:checked::before {
+                                transform: scale(1);
+                            }
+
+                            input[type="checkbox"]:checked ~ span {
+                                color: $--text-green;
+                            }
+                        }
+                    }
+                }
+            }
 
             .transform {
                 width: 50%;
@@ -858,7 +873,7 @@ body {
                 }
                 @include BP(laptop) {
                     height: fit-content;
-					max-height: 990px;
+                    max-height: 990px;
                 }
 
                 @include BP(tablet) {
@@ -876,7 +891,7 @@ body {
 
                     @include BP(sxga) {
                         width: 60%;
-						height: 100%;
+                        height: 100%;
                     }
 
                     @include BP(tablet) {
@@ -926,9 +941,9 @@ body {
                             display: flex;
                             flex-direction: column;
 
-							@include BP(sxga) {
-								height: 435px;
-							}
+                            @include BP(sxga) {
+                                height: 435px;
+                            }
 
                             .shapeWrapper {
                                 width: 50px;
@@ -945,11 +960,11 @@ body {
                                     height: 320px;
                                 }
 
-								@include BP(tablet) {
-									height: 10vh;
-									min-height: 35vh;
-									max-width: 280px;
-								}
+                                @include BP(tablet) {
+                                    height: 10vh;
+                                    min-height: 35vh;
+                                    max-width: 280px;
+                                }
 
                                 .front {
                                     position: absolute;
@@ -1058,17 +1073,17 @@ body {
 
                     @include BP(laptop) {
                         align-self: flex-start;
-						gap: 30px;
+                        gap: 30px;
                     }
 
                     @include BP(tablet) {
-                        align-self: center
+                        align-self: center;
                     }
 
-					@include BP(mobile) {
-						width: 100%;
-					}
-					
+                    @include BP(mobile) {
+                        width: 100%;
+                    }
+
                     header {
                         display: flex;
                         align-items: center;
@@ -1124,17 +1139,17 @@ body {
                                 line-height: 1.5;
                             }
 
-							@include BP(mobile) {
-								font-size: 15px;
-								line-height: 2;
-							}
+                            @include BP(mobile) {
+                                font-size: 15px;
+                                line-height: 2;
+                            }
                         }
 
-						.wrapper {
-							@include BP(mobile) {
-								padding-top: 5vh;
-							}
-						}
+                        .wrapper {
+                            @include BP(mobile) {
+                                padding-top: 5vh;
+                            }
+                        }
 
                         > img {
                             position: absolute;
@@ -1195,7 +1210,7 @@ body {
 .subWrapper2 {
     @include BP(sxga) {
         flex-direction: column;
-		height: min-content;
+        height: min-content;
     }
 
     .amountBars {
@@ -1396,14 +1411,13 @@ body {
                 align-items: center;
                 justify-content: space-between;
 
-				@include BP(sxga) {
-					padding: 15px;
-				}
+                @include BP(sxga) {
+                    padding: 15px;
+                }
 
                 .imageWrapper {
                     display: flex;
                     gap: 47px;
-
 
                     span {
                         color: $--purple-dark;
@@ -1415,9 +1429,9 @@ body {
                     font-weight: 400;
                     text-align: left;
 
-					@include BP(sxga) {
-						font-size: 17px;
-					}
+                    @include BP(sxga) {
+                        font-size: 17px;
+                    }
                 }
 
                 div {
@@ -1664,7 +1678,7 @@ body {
 .secondSectionWrapper {
     display: flex;
     padding: 15px 55px;
-	padding-top: 0;
+    padding-top: 0;
     gap: 15px;
     background: $--background-dark;
 
@@ -1681,10 +1695,10 @@ body {
         padding-top: 0;
     }
 
-	@include BP(mobile) {
-		padding: 15px;
+    @include BP(mobile) {
+        padding: 15px;
         padding-top: 0;
-	}
+    }
 
     footer {
         padding: 20px 15px;
@@ -1717,16 +1731,16 @@ body {
             width: fit-content;
         }
 
-		@include BP(mobile) {
-			position: fixed;
-			width: max-content;
-			transform: translateX(-50%);
-			border: none;
-			bottom: 0px;
-			left: 50%;
+        @include BP(mobile) {
+            position: fixed;
+            width: max-content;
+            transform: translateX(-50%);
+            border: none;
+            bottom: 0px;
+            left: 50%;
 
             border: 1px solid $--border-grey;
-		}
+        }
 
         p {
             margin-bottom: 15px;
@@ -1811,18 +1825,18 @@ body {
             }
         }
 
-		.tableContainer {
-			@include BP(laptop) {
-				width: calc(100vw - 4vw);
-				overflow-x: auto;
-			}
-		}
+        .tableContainer {
+            @include BP(laptop) {
+                width: calc(100vw - 4vw);
+                overflow-x: auto;
+            }
+        }
         .table {
             width: 100%;
 
-			@include BP(laptop) {
-				width: 1600px;
-			}
+            @include BP(laptop) {
+                width: 1600px;
+            }
 
             .head {
                 background: $--table-header;
@@ -1856,9 +1870,9 @@ body {
                         width: 80%;
                     }
 
-					&:has(img):not(:first-child) {
-						color: $--text-green
-					}
+                    &:has(img):not(:first-child) {
+                        color: $--text-green;
+                    }
                 }
 
                 &:not(:first-child) {

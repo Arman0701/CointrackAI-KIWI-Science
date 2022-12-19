@@ -255,6 +255,16 @@ body {
   display: flex;
   gap: 15px;
 }
+.mainSection ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.mainSection ::-webkit-scrollbar-track {
+  background-color: rgba(165, 136, 231, 0.1);
+}
+.mainSection ::-webkit-scrollbar-thumb {
+  background: #805ad5;
+}
 @media screen and (min-width: 1921px) {
   .mainSection {
     width: 1920px;
@@ -407,7 +417,8 @@ body {
 .mainSection .sectionAside .asideTable .line:last-child {
   padding-bottom: 0;
 }
-.mainSection .sectionAside .asideTable .line .lineTitle, .mainSection .sectionAside .asideTable .line .graphInfo {
+.mainSection .sectionAside .asideTable .line .lineTitle,
+.mainSection .sectionAside .asideTable .line .graphInfo {
   display: flex;
   gap: 15px;
 }
