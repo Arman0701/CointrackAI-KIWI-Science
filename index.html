@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CointrackAI</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="variables.css" />
+        <link rel="stylesheet" href="style.css" />
+		<!-- 
+   ____      _     _____               _        _    ___    _    _  ___          _   ____       _                     
+  / ___|___ (_)_ _|_   _| __ __ _  ___| | __   / \  |_ _|  | |  | |/ (_)_      _(_) / ___|  ___(_) ___ _ __   ___ ___ 
+ | |   / _ \| | '_ \| || '__/ _` |/ __| |/ /  / _ \  | |   | |  | ' /| \ \ /\ / / | \___ \ / __| |/ _ \ '_ \ / __/ _ \
+ | |__| (_) | | | | | || | | (_| | (__|   <  / ___ \ | |   | |  | . \| |\ V  V /| |  ___) | (__| |  __/ | | | (_|  __/
+  \____\___/|_|_| |_|_||_|  \__,_|\___|_|\_\/_/   \_\___|  |_|  |_|\_\_| \_/\_/ |_| |____/ \___|_|\___|_| |_|\___\___|
+                                                                
+		-->
+    </head>
+    <body>
+		<main>
+			<header class="header">
+				<div class="menu">
+					<img src="./icons/tableMenuBars.svg" alt="burger menu">
+				</div>
+				<div class="logo">
+					<img src="./icons/logo.svg" alt="logo">
+				</div>
+	
+				<nav class="navbar">
+					<button class="navButton active">
+						<div class="iconWrapper">
+							<img src="./icons/home.svg" alt="home icon">
+						</div>
+						<span>Home</span>
+					</button>
+					<button class="navButton">
+						<div class="iconWrapper">
+							<img src="./icons/portfolio.svg" alt="portfolio icon">
+						</div>
+						<span>
+							Portfolio 
+							<img src="./icons/chevron.svg" alt="chevron down">
+						</span>
+					</button>
+					<button class="navButton">
+						<div class="iconWrapper">
+							<img src="./icons/pricing.svg" alt="pricing icon">
+						</div>
+						<span>Pricing</span>
+					</button>
+					<button class="navButton">
+						<div class="iconWrapper">
+							<img src="./icons/marketplace.svg" alt="marketplace icon">
+						</div>
+						<span>Marketplace</span>
+					</button>
+					<button class="navButton">
+						<div class="iconWrapper">
+							<img src="./icons/file.svg" alt="file.svg">
+						</div>
+						<span>Futures</span>
+					</button>
+					<button class="navButton">
+						<div class="iconWrapper">
+							<img src="./icons/cog.svg" alt="cog">
+						</div>
+						<span>
+							Settings 
+							<img src="./icons/chevron.svg" alt="chevron down">
+						</span>
+					</button>
+				</nav>
+	
+				<div class="account">
+					<div class="userIcon">
+						<span>D</span>
+					</div>
+					<div class="iconWrapper">
+						<img src="./icons/sun.svg" alt="theme toggler">
+					</div>
+				</div>
+			</header>
+
+			<div class="popup" style></div>
+
+			<div class="mainSection">
+				<aside class="sectionAside">
+					<div class="filters">
+						<button>
+							<span>Hide small balances</span>
+							<img src="./icons/eye-hide.svg" alt="eye hiden">
+						</button>
+						<button>
+							<span>Sort</span>
+							<img src="./icons/chevron.svg" alt="chevron down">
+						</button>
+					</div>
+					<div class="searchWrapper">
+						<div class="iconWrapper">
+							<img src="./icons/search.svg" alt="search icon">
+						</div>
+						<input type="text" placeholder="Search your exchange">
+					</div>
+					<div class="asideTable">
+						<div class="line">
+							<div class="lineTitle">
+								<img src="./icons/metamaskIcon.svg" alt="metamask icon">
+								<span>Metamask</span>
+							</div>
+							<div class="graphInfo">
+								<span class="percent">4.85%</span>
+								<img src="./images/redGraph.svg" alt="metamask graphic">
+							</div>
+							<div class="buttons">
+								<button>
+									<img src="./icons/pencil.svg" alt="pencil icon">
+								</button>
+								<button>
+									<img src="./icons/trash.svg" alt="trash icon">
+								</button>
+							</div>
+						</div>
+	
+						<div class="binanceTable">
+							<div class="line">
+								<div class="amountWrapper">
+									<div class="flex">
+										<img src="./icons/binanceIcon.svg" alt="binance icon">
+										<span>Binance</span>
+									</div>
+									<p class="amount">$1000.00</p>
+								</div>
+								<div class="graphicWrapper">
+									<span class="precent">4.85%</span>
+									<img src="./images/greenGraph.svg" alt="binance graphic">
+								</div>
+							</div>
+							<ul class="binanceMenu">
+								<li>
+									<img src="./icons/binanceIcon.svg" alt="binance icon">
+									<span>Binance Savings</span>
+								</li>
+								<li class="active">
+									<img src="./icons/binanceIcon.svg" alt="binance icon">
+									<span>Binance Futures</span>
+								</li>
+							</ul>
+						</div>
+	
+						<div class="line">
+							<img src="./icons/coinBaseIcon.svg" alt="coinbase icon">
+							<span>Coinbase</span>
+							<span class="percent">4.85%</span>
+							<img src="./images/redGraph.svg" alt="metamask graphic">
+							<div class="buttons">
+								<button>
+									<img src="./icons/pencil.svg" alt="pencil icon">
+								</button>
+								<button>
+									<img src="./icons/trash.svg" alt="trash icon">
+								</button>
+							</div>
+						</div>
+						<div class="line">
+							<img src="./icons/coinBaseIcon.svg" alt="coinbase icon">
+							<span>Coinbase</span>
+							<span class="percent">4.85%</span>
+							<img src="./images/redGraph.svg" alt="metamask graphic">
+							<div class="buttons">
+								<button>
+									<img src="./icons/pencil.svg" alt="pencil icon">
+								</button>
+								<button>
+									<img src="./icons/trash.svg" alt="trash icon">
+								</button>
+							</div>
+						</div>
+						<div class="line">
+							<img src="./icons/coinBaseIcon.svg" alt="coinbase icon">
+							<span>Coinbase</span>
+							<span class="percent">4.85%</span>
+							<img src="./images/redGraph.svg" alt="metamask graphic">
+							<div class="buttons">
+								<button>
+									<img src="./icons/pencil.svg" alt="pencil icon">
+								</button>
+								<button>
+									<img src="./icons/trash.svg" alt="trash icon">
+								</button>
+							</div>
+						</div>
+						<div class="line">
+							<img src="./icons/coinBaseIcon.svg" alt="coinbase icon">
+							<span>Coinbase</span>
+							<span class="percent">4.85%</span>
+							<img src="./images/redGraph.svg" alt="metamask graphic">
+							<div class="buttons">
+								<button>
+									<img src="./icons/pencil.svg" alt="pencil icon">
+								</button>
+								<button>
+									<img src="./icons/trash.svg" alt="trash icon">
+								</button>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+				<section class="mainSectionWrapper">
+
+					<div class="subWrapper">
+						<div class="totalPoints">
+							<header>
+								<div>
+									<span>Total Points</span>
+									<div class="selectWrapper">
+										<select>
+											<option value="All">All</option>
+										</select>
+										<img src="./icons/chevron.svg" alt="chevron down">			
+									</div>
+
+									<div class="selectWrapper">
+										<select>
+											<option value="1 year">1 year</option>
+										</select>
+										<img src="./icons/chevron.svg" alt="chevron down">
+									</div>
+								</div>
+								<button>See more</button>
+							</header>
+	
+							<div class="totalPointsContainer">
+								<div class="totalGraphicWrapper">
+									<div class="numbersVertical">
+										<span>$275.000</span>
+										<span>$275.000</span>
+										<span>$275.000</span>
+										<span>$275.000</span>
+										<span>$275.000</span>
+									</div>
+									<div class="mainGraphic">
+										<div class="controls">
+											<button>
+												<img src="./icons/minusCircle.svg" alt="minus">
+											</button>
+											<button>
+												<img src="./icons/plusCircle.svg" alt="plus">
+											</button>
+											<button>
+												<img src="./icons/searchPlus.svg" alt="search">
+											</button>
+											<button>
+												<img src="./icons/home.svg" alt="home">
+											</button>
+											<button>
+												<img src="./icons/hand.svg" alt="hand">
+											</button>
+										</div>
+										<div class="table">
+											<img src="./images/totalPointsGraphic.svg" alt="graphic">
+											<div class="lines">
+												<div class="tableLine"></div>
+												<div class="tableLine"></div>
+												<div class="tableLine"></div>
+												<div class="tableLine"></div>
+												<div class="tableLine"></div>
+											</div>
+											<div class="dotWrapper">
+												<div class="dot"></div>
+												<div class="title">
+													<span>$52.000,52</span>
+													<div class="arrow"></div>
+												</div>
+											</div>
+										</div>
+										<div class="numbersHorizontal">
+											<span>May 2021</span>
+											<span>Jun 2021</span>
+											<span>Jul 2021</span>
+											<span>Aug 2021</span>
+											<span>Sep 2021</span>
+											<span>Oct 2021</span>
+											<span>Nov 2021</span>
+											<span>Dec 2021</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="selectionsWrapper">
+								<form class="selections">
+									<label class="form-control">
+										<input type="checkbox" name="checkbox-checked" />
+										<span>
+											USD
+										</span>
+									</label>
+									<label class="form-control">
+										<input type="checkbox" name="checkbox-checked" />
+										<span>BTC</span>
+									</label>
+									<label class="form-control">
+										<input type="checkbox" name="checkbox-checked" />
+										<span>ETH</span>
+									</label>
+								</form>
+							</div>
+						</div>
+
+						<div class="transform">
+							<div class="exchanges">
+								<header>
+									<span>Most usable exchanges</span>
+									<button>See more</button>
+								</header>
+		
+								<div class="shapesWrapper">
+									
+									<div class="singleShapeWrapper">
+										<p>25%</p>
+										<div class="shapeWrapper">
+											<div style="bottom: 25%;" class="coloredTop"></div>
+											<div style="height: 25%;" class="coloredFront"></div>
+											<div style="height: 25%;" class="coloredLeft"></div>
+		
+											<div class="front"></div>
+											<div class="top"></div>
+											<div class="left"></div>
+										</div>
+										<p>Gate.io</p>
+									</div>
+									<div class="singleShapeWrapper">
+										<p>76%</p>
+										<div class="shapeWrapper">
+											<div style="bottom: 76%;" class="coloredTop"></div>
+											<div style="height: 76%;" class="coloredFront"></div>
+											<div style="height: 76%;" class="coloredLeft"></div>
+		
+											<div class="front"></div>
+											<div class="top"></div>
+											<div class="left"></div>
+										</div>
+										<p>Coinbase</p>
+									</div>
+									<div class="singleShapeWrapper">
+										<p>39%</p>
+										<div class="shapeWrapper">
+											<div style="bottom: 39%;" class="coloredTop"></div>
+											<div style="height: 39%;" class="coloredFront"></div>
+											<div style="height: 39%;" class="coloredLeft"></div>
+		
+											<div class="front"></div>
+											<div class="top"></div>
+											<div class="left"></div>
+										</div>
+										<p>Binance</p>
+									</div>
+									<div class="singleShapeWrapper">
+										<p>52%</p>
+										<div class="shapeWrapper">
+											<div style="bottom: 52%;" class="coloredTop"></div>
+											<div style="height: 52%;" class="coloredFront"></div>
+											<div style="height: 52%;" class="coloredLeft"></div>
+		
+											<div class="front"></div>
+											<div class="top"></div>
+											<div class="left"></div>
+										</div>
+										<p>Huobi</p>
+									</div>
+								</div>
+							</div>
+		
+							<div class="coins">
+								<header>
+									<span>Coins</span>
+									<button>See more</button>
+								</header>
+		
+								<div class="circle">
+									<img src="./images/gradient.svg" alt="gradient">
+									<div class="wrapper">
+										<p>TOP <span>Gainer</span></p>
+										<span>Apecoin</span>
+										<p>
+											<img src="./icons/arrowUp.svg" alt="arrow up">
+											<span>0.74%</span>
+										</p>
+									</div>
+									<div class="wave">
+										<p>TOP <span>Looser</span></p>
+										<span>Apecoin</span>
+										<p>
+											<img src="./icons/arrowDown.svg" alt="arrow down">
+											<span>0.74%</span>
+										</p>
+									</div>
+								</div>
+		
+								<div class="timeline">
+									<span>1h</span>
+									<span>24h</span>
+									<span class="active">7d</span>
+									<span>1m</span>
+									<span>3m</span>
+									<span>6m</span>
+									<span>1y</span>
+									<span>All</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.subWrapper 1 -->
+
+					<div class="subWrapper2">
+						<div class="amountBars">
+							<header>
+								<div class="userIcon">
+									<span class="initial">D</span>
+								</div>
+								<div class="userInfo">
+									<div class="account">
+										<img src="./icons/reload.svg" alt="reload icon">
+										<span>$ 855,914.000</span>
+									</div>
+									<span>Mr. Nick Paterson</span>
+								</div>
+							</header>
+	
+							<div class="barsWrapper"></div>
+	
+							<div class="timeline">
+								<span>1h</span>
+								<span>24h</span>
+								<span class="active">7d</span>
+								<span>1m</span>
+								<span>3m</span>
+								<span>6m</span>
+								<span>1y</span>
+								<span>All</span>
+	
+							</div>
+						</div>
+
+						<div class="analytics">
+							<header>
+								<span>Analytics</span>
+								<button>See more</button>
+							</header>
+	
+							<div class="wrapper">
+								<div class="line">
+									<div class="imageWrapper">
+										<img src="./icons/tradeCountIcon.svg" alt="trade count">
+										<span>Total Trade Count</span>
+									</div>
+									<span>128</span>
+								</div>
+								<div class="line">
+									<div class="imageWrapper">
+										<img src="./icons/mostUsedExcahngesIcon.svg" alt="most used excahnges icon">
+										<span>The Most Used Exchanges</span>
+									</div>
+									<div>
+										<div class="iconWrapper">
+											<img src="./icons/binanceIconSmall.svg" alt="binance icon">
+										</div>
+										<span>Binance</span>
+									</div>
+								</div>
+								<div class="line">
+									<div class="imageWrapper">
+										<img src="./icons/totalWithdrowIcon.svg" alt="total withdrow icon">
+										<span>Total Withdrow</span>
+									</div>
+									<span>$200</span>
+								</div>
+								<div class="line">
+									<div class="imageWrapper">
+										<img src="./icons/tradeCountIcon.svg" alt="trade count">
+										<span>Total Fee Paid</span>
+									</div>
+									<span>$12</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="futures">
+							<header>
+								<span>Futures</span>
+								<button>See more</button>
+							</header>
+
+							<div class="wrapper">
+								<div class="tradingTable">
+									<div class="timing">
+										<p class="date"></p>
+										<div class="trades">
+											<div class="up">
+												<img src="./icons/tradeUp.svg" alt="trade up">
+												<span>$0.74</span>
+											</div>
+											<div class="down">
+												<img src="./icons/tradeDown.svg" alt="trade down">
+												<span>$0.58</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="amount">
+										<span>$3,698.58</span>
+									</div>
+									
+								</div>
+
+								<div class="graphWrapper">
+									<img src="./images/graphPurple.svg" alt="future graph">
+
+									<div class="timeline">
+										<span>1h</span>
+										<span>24h</span>
+										<span class="active">7d</span>
+										<span>1m</span>
+										<span>3m</span>
+										<span>6m</span>
+										<span>1y</span>
+										<span>All</span>
+									</div>
+								</div>
+
+								<div class="balances">
+									<div class="asset">
+										<p>Asset:</p>
+										<p>ES</p>
+									</div>
+
+									<div class="marginBalance">
+										<p>Margin balance</p>
+										<p>$12.50</p>
+									</div>
+
+									<div class="walletBalance">
+										<p>Wallet balance</p>
+										<p>$5,255.00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.subWrapper 2 -->
+				</section>
+				<!-- /. mainSectionWrapper -->
+			</div>
+			
+			<div class="secondSectionWrapper">
+				<footer>
+					<p>Your free trial has been started. There are <span>5 days</span> left.</p>
+					<button>Subscribe</button>
+					<button class="closeButton">
+						<img src="./icons/times.svg" alt="close icon">
+					</button>
+				</footer>
+				
+				<div class="tableWrapper">
+					<header>
+						<span>Holdings</span>
+						<button>See more</button>
+					</header>
+	
+					<div class="tableContainer">
+						<div class="table">
+							<div class="row head">
+								<span>Name</span>
+								<span>Amount</span>
+								<span>Total</span>
+								<span>1 Hour Charge</span>
+								<span>Market Map</span>
+								<span>Price in BTC</span>
+								<span>Price Graph(7D)</span>
+								<span>
+									<img src="./icons/tableMenuBars.svg" alt="table menu bars">
+								</span>
+							</div>
+							<div class="row">
+								<span>
+									<img src="./images/AAVELogo.svg" alt="Aave logo">
+									<span>Aave Abat v2</span>
+								</span>
+								<span>99</span>
+								<span>$56.88</span>
+								<span>
+									<img src="./icons/chevronUpGreen.svg" alt="chevron up green">
+									<span>1.88%</span>
+								</span>
+								<span>7.2B</span>
+								<span>9.12455558</span>
+								<span>
+									<img src="./images/tableGraphGreen.svg" class="graph" alt="price graph">
+								</span>
+								<span>
+									<img src="./icons/verticalDots.svg" alt="vertical dots">
+								</span>
+							</div>
+							<div class="row">
+								<span>
+									<img src="./images/AAVELogo.svg" alt="Aave logo">
+									<span>Aave Abat v2</span>
+								</span>
+								<span>99</span>
+								<span>$56.88</span>
+								<span>
+									<img src="./icons/chevronUpGreen.svg" alt="chevron up green">
+									<span>1.88%</span>
+								</span>
+								<span>7.2B</span>
+								<span>9.12455558</span>
+								<span>
+									<img src="./images/tableGraphGreen.svg" class="graph" alt="price graph">
+								</span>
+								<span>
+									<img src="./icons/verticalDots.svg" alt="vertical dots">
+								</span>
+							</div>
+							<div class="row">
+								<span>
+									<img src="./images/AAVELogo.svg" alt="Aave logo">
+									<span>Aave Abat v2</span>
+								</span>
+								<span>99</span>
+								<span>$56.88</span>
+								<span>
+									<img src="./icons/chevronUpGreen.svg" alt="chevron up green">
+									<span>1.88%</span>
+								</span>
+								<span>7.2B</span>
+								<span>9.12455558</span>
+								<span>
+									<img src="./images/tableGraphGreen.svg" class="graph" alt="price graph">
+								</span>
+								<span>
+									<img src="./icons/verticalDots.svg" alt="vertical dots">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.secondSectionWrapper -->
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>
