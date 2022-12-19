@@ -23,6 +23,13 @@ select {
 body {
   background: #1A202C;
 }
+@media screen and (max-width: 500px) {
+  body {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 
 .header {
   width: 100%;

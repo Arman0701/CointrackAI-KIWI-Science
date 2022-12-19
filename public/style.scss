@@ -4,6 +4,10 @@
 
 body {
     background: $--background-dark;
+
+	@include BP(mobile) {
+		width: fit-content;
+	}
 }
 
 .header {
